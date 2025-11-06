@@ -1,0 +1,40 @@
+{
+  "doctype": "DocType",
+  "name": "CFS Tariff",
+  "module": "CFS Operations",
+  "custom": true,
+  "fields": [
+    {
+      "fieldname": "tariff_code",
+      "label": "Tariff Code",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "rate",
+      "label": "Rate",
+      "fieldtype": "Currency",
+      "reqd": 1
+    },
+    {
+      "fieldname": "is_active",
+      "label": "Active",
+      "fieldtype": "Check",
+      "default": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1
+    }
+  ],
+  "autoname": "field:tariff_code"
+}

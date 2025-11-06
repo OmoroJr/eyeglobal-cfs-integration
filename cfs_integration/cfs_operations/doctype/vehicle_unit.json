@@ -1,0 +1,88 @@
+{
+  "doctype": "DocType",
+  "name": "Vehicle Unit",
+  "module": "CFS Operations",
+  "custom": true,
+  "fields": [
+    {
+      "fieldname": "vehicle_id",
+      "label": "Vehicle ID",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "registration_number",
+      "label": "Registration Number",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "log_book_no",
+      "label": "Log Book Number",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "make",
+      "label": "Make",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "model",
+      "label": "Model",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "year",
+      "label": "Year",
+      "fieldtype": "Int"
+    },
+    {
+      "fieldname": "engine_no",
+      "label": "Engine No",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "chassis_no",
+      "label": "Chassis No",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "owner",
+      "label": "Owner",
+      "fieldtype": "Link",
+      "options": "Customer"
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Available\nIn Use\nMaintenance\nRetired",
+      "default": "Available"
+    },
+    {
+      "fieldname": "assigned_driver",
+      "label": "Assigned Driver",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "insurance_expiry",
+      "label": "Insurance Expiry",
+      "fieldtype": "Date"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "CFS Operator",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "autoname": "field:registration_number"
+}

@@ -1,0 +1,30 @@
+{
+  "doctype": "DocType",
+  "name": "Sales Rebate Rate",
+  "module": "CFS Operations",
+  "custom": true,
+  "fields": [
+    {
+      "fieldname": "sales_person",
+      "label": "Sales Person",
+      "fieldtype": "Link",
+      "options": "Sales Person",
+      "reqd": 1
+    },
+    {
+      "fieldname": "rebate_percentage",
+      "label": "Rebate Percentage",
+      "fieldtype": "Float",
+      "reqd": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "autoname": "field:sales_person"
+}

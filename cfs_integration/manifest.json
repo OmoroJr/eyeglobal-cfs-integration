@@ -1,0 +1,13 @@
+{
+  "app_name": "cfs_integration",
+  "app_title": "CFS Integration",
+  "app_publisher": "EyeGloble Ltd",
+  "app_description": "CFS operations integration with ERPNext",
+  "app_version": "0.8.0",
+  "erpnext_compatibility": [
+    "v15"
+  ],
+  "author": "Lameck Bonface",
+  "email": "wycliffomoro@gmail.com",
+  "license": "MIT"
+}

@@ -1,0 +1,53 @@
+{
+  "doctype": "DocType",
+  "name": "CFS Settings",
+  "module": "CFS Operations",
+  "custom": true,
+  "fields": [
+    {
+      "fieldname": "default_rebate_rate",
+      "label": "Default Rebate Rate (%)",
+      "fieldtype": "Float",
+      "default": 5.0
+    },
+    {
+      "fieldname": "auto_approve_days",
+      "label": "Auto-approve Rebate After (days)",
+      "fieldtype": "Int",
+      "default": 30
+    },
+    {
+      "fieldname": "enable_rebate_on_delivery_note",
+      "label": "Enable Rebate on Delivery Note",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "rebate_expense_account",
+      "label": "Rebate Expense Account",
+      "fieldtype": "Data",
+      "default": "Rebate Expense"
+    },
+    {
+      "fieldname": "cash_account",
+      "label": "Cash Account for Payouts",
+      "fieldtype": "Data",
+      "default": "Cash - CFS"
+    },
+    {
+      "fieldname": "bank_account",
+      "label": "Bank Account for Payouts",
+      "fieldtype": "Data",
+      "default": "Bank - CFS"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "autoname": "CFS Settings"
+}

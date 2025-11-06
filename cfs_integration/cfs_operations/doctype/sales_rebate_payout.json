@@ -1,0 +1,60 @@
+{
+  "doctype": "DocType",
+  "name": "Sales Rebate Payout",
+  "module": "CFS Operations",
+  "custom": true,
+  "fields": [
+    {
+      "fieldname": "sales_person",
+      "label": "Sales Person",
+      "fieldtype": "Link",
+      "options": "Sales Person",
+      "reqd": 1
+    },
+    {
+      "fieldname": "period_start",
+      "label": "Period Start",
+      "fieldtype": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "period_end",
+      "label": "Period End",
+      "fieldtype": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "total_rebate_amount",
+      "label": "Total Rebate Amount",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "payment_entry",
+      "label": "Payment Entry",
+      "fieldtype": "Link",
+      "options": "Payment Entry"
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Draft\nSubmitted\nPaid",
+      "default": "Draft"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "autoname": "field:sales_person"
+}

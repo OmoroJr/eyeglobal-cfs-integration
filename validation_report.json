@@ -1,0 +1,72 @@
+{
+  "zip_path": "/mnt/data/cfs_integration_v28_complete_app.zip",
+  "extracted": "/mnt/data/cfs_integration_v28_complete_app_extracted",
+  "files_list": [
+    ".github",
+    ".github/workflows",
+    ".github/workflows/ci.yml",
+    "LICENSE",
+    "README.md",
+    "USER_GUIDE.md",
+    "cfs_integration",
+    "cfs_integration/api.py",
+    "cfs_integration/cfs_operations",
+    "cfs_integration/cfs_operations/doctype",
+    "cfs_integration/cfs_operations/doctype/cfs_container",
+    "cfs_integration/cfs_operations/doctype/cfs_container.json",
+    "cfs_integration/cfs_operations/doctype/cfs_gate_pass",
+    "cfs_integration/cfs_operations/doctype/cfs_gate_pass.json",
+    "cfs_integration/cfs_operations/doctype/cfs_job",
+    "cfs_integration/cfs_operations/doctype/cfs_job.json",
+    "cfs_integration/cfs_operations/doctype/cfs_settings",
+    "cfs_integration/cfs_operations/doctype/cfs_settings.json",
+    "cfs_integration/cfs_operations/doctype/cfs_tariff",
+    "cfs_integration/cfs_operations/doctype/cfs_tariff.json",
+    "cfs_integration/cfs_operations/doctype/cfs_truck",
+    "cfs_integration/cfs_operations/doctype/cfs_truck.json",
+    "cfs_integration/cfs_operations/doctype/sales_rebate",
+    "cfs_integration/cfs_operations/doctype/sales_rebate.json",
+    "cfs_integration/cfs_operations/doctype/sales_rebate_payout",
+    "cfs_integration/cfs_operations/doctype/sales_rebate_payout.json",
+    "cfs_integration/cfs_operations/doctype/sales_rebate_rate",
+    "cfs_integration/cfs_operations/doctype/sales_rebate_rate.json",
+    "cfs_integration/cfs_operations/doctype/vehicle_unit",
+    "cfs_integration/cfs_operations/doctype/vehicle_unit.json",
+    "cfs_integration/cfs_operations/job.py",
+    "cfs_integration/cfs_operations/rebates.py",
+    "cfs_integration/cfs_operations/tariff.py",
+    "cfs_integration/cfs_operations/vehicle.py",
+    "cfs_integration/hooks.py",
+    "cfs_integration/manifest.json",
+    "pytest.ini",
+    "setup.py",
+    "tests",
+    "tests/test_integration.py"
+  ],
+  "syntax_errors": [],
+  "json_errors": [],
+  "missing_init": [
+    ".",
+    "tests",
+    "cfs_integration/cfs_operations",
+    "cfs_integration"
+  ],
+  "hooks_issues": [
+    {
+      "ref": "cfs_integration.cfs_operations.rebates.create_rebate_for_invoice",
+      "resolved_path": "cfs_integration/cfs_operations/rebates/create_rebate_for_invoice",
+      "exists": false
+    },
+    {
+      "ref": "cfs_integration.cfs_operations.rebates.create_rebate_for_delivery",
+      "resolved_path": "cfs_integration/cfs_operations/rebates/create_rebate_for_delivery",
+      "exists": false
+    },
+    {
+      "ref": "cfs_integration.cfs_operations.rebates.generate_monthly_payouts",
+      "resolved_path": "cfs_integration/cfs_operations/rebates/generate_monthly_payouts",
+      "exists": false
+    }
+  ],
+  "manifest_issue": null
+}

@@ -1,0 +1,72 @@
+{
+  "doctype": "DocType",
+  "name": "Sales Rebate",
+  "module": "CFS Operations",
+  "custom": true,
+  "fields": [
+    {
+      "fieldname": "sales_person",
+      "label": "Sales Person",
+      "fieldtype": "Link",
+      "options": "Sales Person",
+      "reqd": 1
+    },
+    {
+      "fieldname": "transaction_reference",
+      "label": "Transaction Reference",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "transaction_doctype",
+      "label": "Transaction DocType",
+      "fieldtype": "Select",
+      "options": "Sales Invoice\nDelivery Note",
+      "reqd": 1
+    },
+    {
+      "fieldname": "rebate_type",
+      "label": "Rebate Type",
+      "fieldtype": "Select",
+      "options": "Percentage\nFixed",
+      "reqd": 1
+    },
+    {
+      "fieldname": "rebate_value",
+      "label": "Rebate Value",
+      "fieldtype": "Float",
+      "reqd": 1
+    },
+    {
+      "fieldname": "computed_amount",
+      "label": "Computed Amount",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Pending\nApproved\nPaid\nCancelled",
+      "default": "Pending"
+    },
+    {
+      "fieldname": "linked_payout",
+      "label": "Linked Payout",
+      "fieldtype": "Link",
+      "options": "Sales Rebate Payout"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "autoname": "field:transaction_reference"
+}

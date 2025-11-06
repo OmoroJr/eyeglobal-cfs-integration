@@ -1,0 +1,82 @@
+{
+  "doctype": "DocType",
+  "name": "CFS Gate Pass",
+  "module": "CFS Operations",
+  "custom": true,
+  "fields": [
+    {
+      "fieldname": "gate_pass_no",
+      "label": "Gate Pass No",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "gate_pass_type",
+      "label": "Gate Pass Type",
+      "fieldtype": "Select",
+      "options": "IN\nOUT",
+      "reqd": 1
+    },
+    {
+      "fieldname": "container_no",
+      "label": "Container No",
+      "fieldtype": "Link",
+      "options": "CFS Container"
+    },
+    {
+      "fieldname": "vehicle_no",
+      "label": "Vehicle No",
+      "fieldtype": "Link",
+      "options": "Vehicle Unit"
+    },
+    {
+      "fieldname": "driver_name",
+      "label": "Driver Name",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "gate_in_time",
+      "label": "Gate In Time",
+      "fieldtype": "Datetime",
+      "read_only": 1
+    },
+    {
+      "fieldname": "gate_out_time",
+      "label": "Gate Out Time",
+      "fieldtype": "Datetime",
+      "read_only": 1
+    },
+    {
+      "fieldname": "authorized_by",
+      "label": "Authorized By",
+      "fieldtype": "Link",
+      "options": "User"
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Pending\nApproved\nCompleted",
+      "default": "Pending"
+    },
+    {
+      "fieldname": "remarks",
+      "label": "Remarks",
+      "fieldtype": "Small Text"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "CFS Operator",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ]
+}

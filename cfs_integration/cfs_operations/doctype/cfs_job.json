@@ -1,0 +1,33 @@
+{
+  "doctype": "DocType",
+  "name": "CFS Job",
+  "module": "CFS Operations",
+  "custom": true,
+  "fields": [
+    {
+      "fieldname": "job_no",
+      "label": "Job No",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "job_type",
+      "label": "Job Type",
+      "fieldtype": "Select",
+      "options": "IMPORT\nEXPORT",
+      "reqd": 1
+    },
+    {
+      "fieldname": "customer",
+      "label": "Customer",
+      "fieldtype": "Link",
+      "options": "Customer"
+    },
+    {
+      "fieldname": "tariff_code",
+      "label": "Tariff Code",
+      "fieldtype": "Data"
+    }
+  ],
+  "autoname": "field:job_no"
+}

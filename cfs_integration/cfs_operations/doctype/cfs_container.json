@@ -1,0 +1,26 @@
+{
+  "doctype": "DocType",
+  "name": "CFS Container",
+  "module": "CFS Operations",
+  "custom": true,
+  "fields": [
+    {
+      "fieldname": "container_no",
+      "label": "Container No",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "size",
+      "label": "Size",
+      "fieldtype": "Int"
+    },
+    {
+      "fieldname": "job",
+      "label": "Job",
+      "fieldtype": "Link",
+      "options": "CFS Job"
+    }
+  ],
+  "autoname": "prompt"
+}
